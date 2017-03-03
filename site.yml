@@ -1,6 +1,6 @@
 ---
 
-- name: Join CentOS7 instances to an Active Directory Domain
+- name: Join CentOS 7 instances to an Active Directory Domain
 # You can change the hosts below to 'all' or another group as specified in your
 # /etc/ansible/hosts file
   hosts: nodes
