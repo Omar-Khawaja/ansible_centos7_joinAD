@@ -1,0 +1,9 @@
+---
+# Joins CentOS 7 machine(s) to AD domain
+
+- name: Join CentOS 7 machine(s) to AD domain
+  expect:
+    timeout: 150
+    command: realm join -U "{{ domain_admin }}"@"{{ domain }}" "{{ domain }}" 
+    responses:
+      (.*)@(.*): "{{ domain_admin_pw }}"

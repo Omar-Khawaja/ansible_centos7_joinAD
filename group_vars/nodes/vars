@@ -1,0 +1,9 @@
+---
+
+# The variables below are being pointed to their encrypted counterparts in the vault
+# file. Refer to the followng documentation by ansible to learn more:
+# http://docs.ansible.com/ansible/playbooks_best_practices.html#best-practices-for-variables-and-vaults
+
+domain: "{{ vault_domain }}"
+domain_admin: "{{ vault_domain_admin }}"
+domain_admin_pw: "{{ vault_domain_admin_pw }}"
