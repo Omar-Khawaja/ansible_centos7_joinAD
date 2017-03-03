@@ -1,6 +1,6 @@
 ---
 
-- name: Join CentOS7/RHEL7 instances to an Active Directory Domain
+- name: Join CentOS7 instances to an Active Directory Domain
 # You can change the hosts below to 'all' or another group as specified in your
 # /etc/ansible/hosts file
   hosts: nodes
@@ -10,8 +10,8 @@
     - join_domain
 
 
-# PLEASE NOTE: if you change the hosts group, then you need to also change
-# the name of the directory under group_vars (currently "nodes") to match the 
+# PLEASE NOTE: if you change the hosts group, you must also change the
+# name of the directory under group_vars (currently "nodes") to match the 
 # name of the group or else the playbook will not be able to pull the necessary 
 # variables during runtime.
 
