@@ -8,4 +8,7 @@
 
 vault_domain: <domain name>
 vault_domain_admin: <domain admin username>
-vault_domain_admin_pw: <domain admin password>
+vault_domain_admin_pw: "<domain admin password>"
+
+# keep the password in quotes or else your playbook can hang indefinitely
+# if your password has special characters like "#" in it
